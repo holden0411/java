@@ -1,0 +1,78 @@
+import java.util.Scanner;
+
+public class java_ch03 {
+
+	public static void main(String[] args) {
+
+//		程式練習第一題
+//		System.out.print("請輸入正方形邊長:");
+//		Scanner sc = new Scanner(System.in);
+//		int i =sc.nextInt();
+//		System.out.println("正方形面積為"+(i*i));
+//		程式練習第二題
+//		System.out.print("請輸入浮點數1:");
+//		Scanner sc = new Scanner(System.in);
+//		float i =sc.nextFloat();
+//		System.out.print("請輸入浮點數2:");
+//		Scanner sc_2 = new Scanner(System.in);
+//		float j =sc_2.nextFloat();
+//		System.out.println("兩組變數的合"+(i+j));
+//		System.out.println("兩組變數的積"+(i*j));
+		
+//		程式練習第三題
+//		System.out.print("請輸入值:");
+//		Scanner sc = new Scanner(System.in);
+//		int i =sc.nextInt();
+//		System.out.println("平方:"+(i*i));
+//		System.out.println("次方:"+(i*i*i));
+//		程式練習第四題		
+//		char  ch,ch1,ch2;
+//		ch = 97;
+//		ch1= 98;
+//		ch2= 99;
+//		System.out.println(ch);
+//		System.out.println(ch1);
+//		System.out.println(ch2);
+//		課程練習第五題
+		
+//		System.out.println("\\這是第 3 章的練習題\\");
+				
+//		課程練習第六題
+//		byte ch;
+//		ch = 'x';
+//		System.out.println(ch);
+				
+		
+//		課程練習七題
+//		System.out.print("請輸入數值1:");
+//		Scanner sc = new Scanner(System.in);
+//		int i =sc.nextInt();
+//		System.out.print("請輸入數值2:");
+//		Scanner sc_2 = new Scanner(System.in);
+//		int j =sc_2.nextInt();
+//		System.out.println("兩組數值的合的平方"+(i+j)*(i+j));
+//		
+//		程式練習八題
+//		System.out.println("我正在學習\"java 程式語言\"");
+		
+//		程式練習九題
+//		byte ch;
+//		ch = '\'';
+//		System.out.println(ch);
+		
+//		程式練習十題		
+		int deposit_1 = 240000;
+		int deposit_2 = 1500000;
+		final double ratio = 0.0084 ;
+		System.out.println("本利合為"+ deposit_1*(1+(1.0084/12)));
+		System.out.println("本利合為"+ deposit_2*(1+(1.0084/12)));
+		
+		int a =5;
+		int b =10 ;
+		int c  = a+b;
+		System.out.println(c);
+				
+		
+	}
+
+}
