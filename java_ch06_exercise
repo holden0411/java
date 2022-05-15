@@ -1,0 +1,110 @@
+	import java.util.*;
+
+import javax.swing.plaf.TextUI;
+public class java_ch06 {
+
+
+	public static void main(String[] args) {
+//第一題 計算 1~100 3的倍數總和
+//
+//		int sum = 0;
+//		for (int i = 0; i <= 100; i++) {
+//			if (i % 3 == 0) {
+////				System.out.println(i);
+//				sum = sum + i;
+//			}
+//		}
+//		System.out.println(sum);
+		
+//第二題 輸入任一整數N 印出 1*1、2*2~N*N
+//		System.out.print("請輸入任一數字:");
+//		Scanner sc = new Scanner(System.in);
+//		int a = sc.nextInt();
+//		
+//		for (int i=1 ;i <= a ; i++) {
+//			for(int j =1; j <=a ;j++) {
+//				System.out.println(i+"x"+j+"="+(i*j));
+//				}
+//			}
+
+//第三題 輸入兩個整數 紀錄兩個整數合
+//		System.out.print("請輸入任一數字1:");
+//		Scanner sc = new Scanner(System.in);
+//		int a = sc.nextInt();	
+//		System.out.print("請輸入任一數字2:");
+//		Scanner sc1 = new Scanner(System.in);
+//		int b = sc1.nextInt();	
+//		int sum = 0;
+//		for (int i = a ;i<= b ; i++) {
+//			sum = sum + i;
+//		}
+//	System.out.println(sum);	
+
+//第四題 將第三題加入輸入0則停止運算機制
+		
+//		while(true) {
+//		System.out.print("請輸入任一數字1:");
+//		Scanner sc = new Scanner(System.in);
+//		int a = sc.nextInt();	
+//		System.out.print("請輸入任一數字2:");
+//		Scanner sc1 = new Scanner(System.in);
+//			int b = sc1.nextInt();	
+//			int sum = 0;
+//			for (int i = a ;i<= b ; i++) {
+//				sum = sum + i;
+//			}		
+//			System.out.println("數字1累加到數字2總和 = "+sum);
+//		
+//			System.out.print("繼續請按 1 結束請按 0 : ");
+//			Scanner sc3 = new Scanner(System.in);
+//			int c = sc3.nextInt();	
+//		if (c ==0) {
+//			System.out.println("謝謝使用");
+//			break;
+//		}
+//		}
+//第五題 輸入1~100之間 屬於 5或7的倍數數值
+//	for (int i =1; i<=100 ;i++) {
+//		if(i%5==0 || i%7==0) {
+//		System.out.println(i);}
+//	}
+		
+//第六題 寫一個程式輸入矩型長寬並印出*的圖形
+//		System.out.print("請輸入寬:");
+//		Scanner sc = new Scanner(System.in);
+//		int a = sc.nextInt();
+//		System.out.print("請輸入長:");
+//		Scanner sc1 = new Scanner(System.in);
+//		int b = sc1.nextInt();
+//		
+//	
+//	for(int i=1;i<=b;i++) {
+//		for(int j=1;j<=a;j++) {
+//			System.out.print("*");
+//		}
+//		System.out.println("");
+//	}
+	
+//第七題 畫出菱形
+//		
+//		for (int i =1 ; i<= ; i++) {
+////			System.out.println(i);
+//			for (int k =1; k<=(5-i);k++)
+//				System.out.print(" ");
+//			for (int j =1 ;j<=(2*i-1);j++)
+//				System.out.print("*");
+//			System.out.println("");
+//		}
+//		for (int i =5 ; i>=1 ; i--) {
+////			System.out.println(i);
+//				for (int k =1; k<=(5-i);k++)
+//					System.out.print(" ");
+//				for (int j =1 ;j<=(2*i-1);j++)
+//					System.out.print("*");
+//				System.out.println("");
+//
+//		}
+//第八題 寫程式 確認帳號密碼
+		
+	}
+}
