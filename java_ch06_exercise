@@ -106,5 +106,99 @@ public class java_ch06 {
 //		}
 //第八題 寫程式 確認帳號密碼
 		
+//		int x =0;
+//		for (int i= 0 ; x<=2 ;i++) {
+//			x=x+i;
+//			System.out.print("請輸入密碼(第一次):");
+//			Scanner sc = new Scanner(System.in);
+//			int a = sc.nextInt();
+//			System.out.print("請輸入密碼(第二次):");
+//			Scanner sc1 = new Scanner(System.in);
+//			int b = sc1.nextInt();
+//			if (a > 9999 || b >9999) {
+//				System.out.println("密碼限4位整數!請重新輸入");
+//			}
+//			else if (a==b) {
+//				System.out.println("你輸入的密碼正確");
+//				break;
+//			}
+//			else {System.out.println("輸入錯誤請重新輸入");}
+//			
+//		}
+//		System.out.println("你已輸入三次錯誤!!系統停止");
+
+//第九題 兌獎
+//		System.out.print("請輸入數字1: ");
+//		Scanner sc = new Scanner(System.in);
+//		int a = sc.nextInt();
+//		System.out.print("請輸入數字2: ");
+//		Scanner sc1 = new Scanner(System.in);
+//		int b = sc1.nextInt();
+//		System.out.print("請輸入數字3: ");
+//		Scanner sc2 = new Scanner(System.in);
+//		int c = sc2.nextInt();
+//		System.out.print("請輸入數字4: ");
+//		Scanner sc3 = new Scanner(System.in);
+//		int d = sc3.nextInt();
+//		System.out.print("請輸入數字5: ");
+//		Scanner sc4 = new Scanner(System.in);
+//		int e = sc4.nextInt();
+//		System.out.print("請輸入數字6: ");
+//		Scanner sc5 = new Scanner(System.in);
+//		int f = sc5.nextInt();
+//		
+//		//設定號碼
+//		int ans1 = 5;
+//		int ans2 = 10;
+//		int ans3 = 15;
+//		int ans4 = 20;
+//		int ans5 = 25;
+//		int ans6 = 30;
+//		
+//		
+//		if (a==0 || a>49 && b==0 || b>49 && c==0 || c>49 && d==0 || d>49 && e==0 || e>49 && f==0 || f>49) {
+//			System.out.println("數字限選取整數1~49 ");
+//		}
+//		else  {	
+//			if (a == ans1 || a== ans2   || a== ans3  || a== ans4  || a== ans5  || a== ans6  ) {
+//				System.out.println("數字1中獎");
+//			}
+//			if (b == ans1 || b== ans2   || b== ans3  || b== ans4  || b== ans5  || b== ans6  ) {
+//				System.out.println("數字2中獎");
+//			}
+//			if (c == ans1 || c== ans2   || c== ans3  || c== ans4  || c== ans5  || c== ans6  ) {
+//				System.out.println("數字3中獎");
+//			}
+//			if (d == ans1 || d== ans2   || d== ans3  || d== ans4  || d== ans5  || d== ans6  ) {
+//				System.out.println("數字4中獎");
+//			}
+//			if (e == ans1 || e== ans2   || e== ans3  || e== ans4  || e== ans5  || e== ans6  ) {
+//				System.out.println("數字5中獎");
+//			}
+//			if (f == ans1 || f== ans2   || f== ans3  || f== ans4  || f== ans5  || f== ans6  ) {
+//				System.out.println("數字6中獎");
+//			}
+//			else System.out.println("可惜沒中獎");		
+//		}
+		
+//第十題 數學方程式 //解不出來
+		System.out.print("請輸入任一數字x:");
+		Scanner sc = new Scanner(System.in);
+		int x = sc.nextInt();	
+		System.out.print("請輸入任一數字n:");
+		Scanner sc1 = new Scanner(System.in);
+		int n = sc1.nextInt();		
+		
+		double sum1 = 0 ;
+		double sum2 = 0 ;
+		
+		for (int i =1 ; i <=n ;i++) {
+			for (int k =n ; k >= i ;k--) {
+				sum1 =(x+i)/k;
+			}
+			sum2 =sum1++;
+		}
+		System.out.print(sum2);				
 	}
 }
+
