@@ -1,0 +1,36 @@
+
+public class javaHW_P139 {
+
+//取最大值
+	public static void main(String[] args) {
+		double[]x = {1.1,2.0,1.2,1.4,0.5,6.0}; //建立一個double array 放入6個屬性
+		double max =x[0]; //建立一個max 並把array的第一個屬性x[0]先指定給max
+		for (int i=0;i<x.length;i++) { //用for迴圈把[]x的內容呈現出來(for初始直i為0;如果i小於array的項目數,i就+1並重複執行{}中的程式
+			if (x[i]>max) {   //用if判斷如果迴圈跑出的第x[i]比上面定義的max 也就是x[0]大
+				max = x[i];} //就把max置換為該數值(詳EX.)
+		}
+			System.out.printf("Double[]x的最大值為:%.1f%n",max);
+//Ex			
+			//max = 1.1
+			//第一動 1.1 是否大於 1.1(max=x[0])  結果false
+			//第二動 2.0 是否大於 1.1(max=x[0])  結果True  就把max 換成2.0 然後繼續比對
+			//第三動 1.2 是否大於 2.0(max)  結果false.....持續比對
+//取最小值
+		double min = x[0];
+		for (int i = 0; i < x.length; i++) {
+			if (x[i] < min) {
+				min = x[i];
+			}
+		}
+		System.out.printf("Double[]x的最小值為:%.1f%n",min);
+
+//取平均值		
+		double sum = x[0];
+		for (int i = 0; i < x.length; i++) {
+				sum = sum + x[i];   //把x[]中的數值一直累加
+		}
+		System.out.printf("Double[]x的平均值為:%.1f%n",sum/x.length);
+		
+	}
+
+}
