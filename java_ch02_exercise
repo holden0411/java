@@ -1,0 +1,20 @@
+public class java_ch02 {
+
+	public static void main(String[] args) {
+//第一題
+		System.out.println("春面不覺曉,處處聞啼鳥\r夜來風雨聲,花落知多少");
+//第二題
+		System.out.println("\"我的Java程式\"");
+//第三題 
+		for (int i=1 ;i<=5;i++) {    //for迴圈先印出每一層要產生的星號
+			for(int j =0; j<i ; j++) { //for迴圈如果每一層的的數值小於i
+				System.out.print("*"); //就印出一個*
+			}
+		System.out.println("");//換行
+		}
+//第四題Main 要小寫
+		
+//第五題03行 少了; 04行 System要大寫
+		
+	}
+}
