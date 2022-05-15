@@ -1,0 +1,123 @@
+import java.util.*;
+
+public class java_ch04 {
+
+	public static void main(String[] args) {
+//第一題
+//		System.out.print("請輸入1~31任一數字:");
+//		Scanner sc = new Scanner(System.in);
+//		int i = sc.nextInt();
+//		int j=2<<i;
+//		if (i <= 31) {
+//			System.out.println(j);
+//		}
+//		else {
+//			System.out.println("輸入值大於31!!");
+//		}	
+//第二題
+//		System.out.print("請輸入您要兌換的金額:");
+//		Scanner sc = new Scanner(System.in);
+//		int i =sc.nextInt();
+//		int a = i/10;
+//		int b = (i%10)/5;
+//		int c = (i%10)%5;
+//		System.out.println("您可兌換的10元="+a+"枚");
+//		System.out.println("您可兌換的5元="+b+"枚");
+//		System.out.println("您可兌換的1元="+c+"枚");
+//第三題
+//		System.out.print("請輸入任一數字:");
+//		Scanner sc = new Scanner(System.in);
+//		int i =sc.nextInt();	
+//		int a =i/13;
+//		int b =i%13;
+//		System.out.println("該數字除以13的商="+ a + ";餘數=" + b);
+
+//第四題 	計算i與j的平方和
+//		System.out.print("請輸i的值:");
+//		Scanner sc = new Scanner(System.in);
+//		double i =sc.nextInt();
+//		System.out.print("請輸j的值:");
+//		Scanner sc_2 = new Scanner(System.in);
+//		double j =sc_2.nextInt();
+//		System.out.println(i+"的平方與"+j+"的平方相加等於"+(i*i+j*j));
+		
+//第五題 計算200公尺面對面前進  a 每秒100公尺 ; b 每秒30英寸 (1英寸=2.54公分)
+//		System.out.print("請輸兩人之間的距離:");
+//		Scanner sc = new Scanner(System.in);
+//		double i =sc.nextInt();
+//		i=i/(1+30*2.54/100); //每次a跟b同時扣掉的數字 
+//		System.out.println("相遇時間是 :"+i+" 秒");	
+
+//第六題 程式計算1+2+....+100 
+//		System.out.print("請輸起始值:");
+//		Scanner sc = new Scanner(System.in);
+//		int i =sc.nextInt();
+//		System.out.print("請輸結束值:");
+//		Scanner sc_2 = new Scanner(System.in);
+//		int j =sc_2.nextInt();
+//		
+//		int sum = 0;
+//		for ( i=0 ; i<=j;i++) {
+//			sum = sum + i ;
+//		}
+//			System.out.println("計算"+i+"加到"+j+"的總和為:"+sum);
+//第七題 雞兔同籠 (解法1)
+//		double x1, x2; // 定義x1 = 雞  x2=兔
+//		System.out.print("請輸入共有幾隻腳:");
+//		Scanner sc = new Scanner(System.in);
+//		int y1 =sc.nextInt();
+//		System.out.print("請輸入共有幾個頭:");
+//		Scanner sc_2 = new Scanner(System.in);
+//		int y2 =sc_2.nextInt();
+//		
+//		x2= (y1-y2*2)/2;
+//		x1= y2-x2;
+//		if (x2%1==0 || x1%1==0){
+//		System.out.println("雞有 :"+x1+" 隻");
+//		System.out.println("免子有 :"+x2+" 隻");
+//		}else
+//		System.out.println("輸入的值不合理,無法計算");
+
+//第七題 雞兔同籠 (解法2) 待補..
+		
+//第八題 繳交停車費
+			/* 假設某個停車場的費率是停車 2 小時以內, 每半小時 30 元, 超過 2 小時,
+			 * 但未滿 4 小時的部分, 每半小時 40 元, 超過 4 小時以上的部分, 每半小時 60 元, 
+			 * 未滿半小時部分不計費。如果您從早上 10 點 23 分停到下午 3 點 20 分, 請撰寫程式計算共需繳交的停車費。
+			 */
+
+//				int time = 297;									        //停車時間從10:23~15:20共297分鐘
+//				int money = 0;									        //初始化停車費
+//				
+//				if(time < 120) {								        //兩個小時內的停車費, 每半小時30元 (未滿半小時不計)
+//					money = (time / 30) * 30;
+//				} else if((time >= 120) && (time < 240)) {		          			//超過兩個小時,未滿四個小時的停車費, 前兩小時共120+超過每半小時40元 (未滿半小時不計)
+//					money = 120 + ((time - 120) / 30) * 40;
+//				} else if(time >= 240) {						                //超過四個小時, 前四小時共(120+160)+超過每半小時60元 (未滿半小時不計)
+//					money = 280 + ((time - 240) / 30) * 60;
+//				}
+//				
+//				System.out.println("從早上 10 點 23 分停到下午 3 點 20 分,共需繳交的停車費: " + money + " 元");
+
+//第九題 判斷基數偶數
+		
+//		System.out.print("請輸任一整數:");
+//		Scanner sc = new Scanner(System.in);
+//		int i =sc.nextInt();
+//		
+//		if (i%2 ==0) {
+//			System.out.println("你輸入的是偶數");
+//		}
+//		else{
+//			System.out.println("你輸入的是奇數");
+//		}
+		
+//第十題 	溫度轉換
+		
+		System.out.print("請輸入目前溫度(攝氏):");
+		Scanner sc = new Scanner(System.in);
+		float i =sc.nextFloat();
+		float j=(i*9/5+32);
+		System.out.println("轉換華氏為"+ j);		
+	}
+}
