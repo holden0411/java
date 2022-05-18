@@ -181,7 +181,7 @@ public class java_ch06 {
 //			else System.out.println("可惜沒中獎");		
 //		}
 		
-//第十題 數學方程式 //解不出來
+//第十題 數學方程式 
 		System.out.print("請輸入任一數字x:");
 		Scanner sc = new Scanner(System.in);
 		int x = sc.nextInt();	
@@ -192,13 +192,33 @@ public class java_ch06 {
 		double sum1 = 0 ;
 		double sum2 = 0 ;
 		
-		for (int i =1 ; i <=n ;i++) {
-			for (int k =n ; k >= i ;k--) {
-				sum1 =(x+i)/k;
-			}
-			sum2 =sum1++;
+		for (int i = 1 ,y=n; i<=n && y>0;i++,y--) {
+//			System.out.println(i);//i=1、2、3、n
+//			System.out.println(y);//y=n、4、3...1
+			sum1=(double)(x+i)/y; 
+			sum2+=sum1;	
 		}
-		System.out.print(sum2);				
-	}
+		System.out.println(sum2);
+		
+//		//分母 x+n
+//		for (int i = 1 ; i<=n;i++) {
+//			sum1=x+i;
+////			System.out.println(sum1);
+//		}
+//		
+//		//分子 n-1
+//		for( int y= n;y>0;y--) {
+//			
+//			sum2=y;
+////			System.out.println(sum2);
+//		}
+//		for (int i=0 ;i<=n;i++)		{
+//			sum3=sum1/sum2;
+//		}
+//		System.out.println(sum3);
+//		
+//		
+//				
+		}
+			
 }
-
