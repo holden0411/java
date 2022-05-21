@@ -1,0 +1,23 @@
+/*
+新增一個TestEmployee 並產生emp(一般員工) 與 emp1(Manager) 印出兩位的基本資料
+*/
+package exam.e4;
+
+public class TestEmployee  {
+	
+	public static void main(String[] args) {
+//new一般員工		
+		Employee em = new Employee(01,"Holder",5000);
+//		 	em.setEmpno(01);
+//		 	em.setName("Holden");
+//		 	em.setSalary(5000);
+		System.out.printf("員工編號=%d,員工姓名=%s,員工薪水=NTD:%d元%n",em.getEmpno(),em.getName(),em.getSalary());
+		
+//new經理(薪水為底薪+獎金)	
+		Manager em2 = new Manager(02,"Vencent",5000,5000);
+		System.out.printf("員工編號=%d,員工姓名=%s,員工薪水=NTD:%d元%n",em2.getEmpno(),em2.getName(),em2.getSalary());	
+	
+	
+	}
+
+}
