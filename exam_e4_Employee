@@ -1,0 +1,42 @@
+/*
+ 如果我們希望外部其它類別『不能修改』empno、name、salary的欄位，僅能在new Employee
+時於建構方法中設定員工編號以及員工姓名以及salary，以及建立物件後要可以利用getXXX取得
+empno、name、salary。
+ */
+
+
+package exam.e4;
+
+public class Employee  {
+    private int empno;
+    private String name;
+    private long salary;
+//上方"變數"右鍵create get=取得參數的方法/set=設定參數的方法   
+    
+//建立  Employee 建構方法可以透過方法呼叫(傳入變數)   
+ public Employee(int empno, String name,long salary) {
+		this.name = name;
+		this.empno = empno;
+		this.salary =salary;
+	}   
+    
+//get與set方法 
+    public int getEmpno() {
+		return empno;
+	}
+	public void setEmpno(int empno) {
+		this.empno = empno;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public long getSalary() {
+		return salary;
+	}
+	public void setSalary(long salary) {
+		this.salary = salary;
+	}
+}
