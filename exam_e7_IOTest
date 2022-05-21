@@ -1,0 +1,50 @@
+/* 
+    		 http://iosnetworkdemo.appspot.com/json.jsp?msg=helloWorld，
+    		會回應{"msg":"helloWorld","狀 態":"成功"}，編碼為UTF8 
+    	    請利用Java程式呼叫此網址，此將此網址回傳的結果示在Console中(IOTest.java)
+    	    程式中除了MalformedURLException其它 Exception處理必須使用try catch不能直接由方法抛出。
+    	    所有IO都必須close
+ */
+
+
+package exam.e7;
+
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.nio.charset.Charset;
+
+public class IOTest {
+    public static void main(String[] args) throws MalformedURLException {
+   
+   	
+    	try   
+		 	{
+    		URL url = new URL("http://iosnetworkdemo.appspot.com/json.jsp?msg=helloWorld"); //讀取URL (這裡把網址設定錯誤可以測試 catchException
+    		InputStream is = url.openStream() ;//將資料轉存is
+    		InputStreamReader isr=new InputStreamReader(is,"utf-8"); //透過InputStreamReader指定讀取utf-8的檔案
+    		BufferedReader br=new BufferedReader(isr);//利用BufferedInputStream先把資料存於Buffer區加速讀取速度
+				String date=br.readLine();//將讀取到的資料轉成字串
+	            while (date!=null) {   //透過while迴圈印出內容
+	                System.out.print(date);
+	                date=br.readLine(); //一次讀取一行
+	                System.out.println(",編碼為"+Charset.defaultCharset());//印出目前JVM的編碼
+			}
+	         is.close(); //關閉檔案
+	         isr.close();
+	         br.close();
+		//catch 到 MalformedURLException可以直接由方法抛出
+		}catch (MalformedURLException me) {
+			throw new MalformedURLException("網址有誤!!");//抛出Exception in thread "main" java.net.MalformedURLException: 網址有誤 由JVM處裡
+		}catch (IOException e) {
+			e.printStackTrace();
+		}finally {
+			System.out.println("程式執行完成!!");
+		}
+    		
+    }
+}
