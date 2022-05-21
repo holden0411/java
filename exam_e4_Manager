@@ -1,0 +1,42 @@
+/*
+設計一個新的Manager(經理)類別，繼承Employee類別，然而經理比一般員工多了long型態的
+bonus(分紅)，分紅也『不開放修改』同樣只能由建構方式中指定，請設計一個新的建構方法可
+ */
+
+package exam.e4;
+
+//建立一個Manager class 繼承 Employee
+
+public class Manager extends Employee {
+
+//新增bonus 並產生 get set方法
+	
+	private long bonus;
+
+	public long getBonus() {
+		return bonus;
+	}
+
+	public void setBonus(long bonus) {
+		this.bonus = bonus;
+	}
+
+//先在Employee class 建立一個建構方法,然後於Manager 的建構方法呼叫Employee(父類)，並新增bonus
+	
+	public Manager(int empno ,String name ,long salary,long bonus) {
+		super(empno,name,salary); //父類的super
+		this.bonus = bonus;
+	}
+	/*
+	以同時指定empno、name、salary、bonus的欄位而且要呼叫父類別的建構方法。
+	經理的薪水為原本的salary加上bonus，請覆寫getSalary方法。
+	 */
+	@Override
+	public long getSalary() {
+		long salary = super.getSalary();
+		long Managersalary = salary+this.bonus ;
+		return Managersalary;
+	}
+	
+	
+}
