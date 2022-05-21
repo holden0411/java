@@ -1,4 +1,4 @@
-//這個為老師預設沒有更動，主要是建立Product的父類Class
+//這個為老師預設沒有更動，主要是建立Product(父類)Class
 package exam.e5;
 
 public class Product {
