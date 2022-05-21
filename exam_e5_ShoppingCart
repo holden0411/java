@@ -1,0 +1,38 @@
+package exam.e5;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ShoppingCart {
+    public static void main(String[] args) {
+
+        //實作1.加入二台Notebook("Asus",30000),Notebook("Acer",20000),Food("Cookie",200)到shoppingList中
+        List<Product> shoppingList = new ArrayList<Product>();
+        Notebook nb1 = new Notebook("Asus", 30000); //建立nb1
+        Notebook nb2 = new Notebook("Acer",20000);
+        Food food = new Food("Cookie",200);
+        shoppingList.add(nb1);//將nb1放入shoppingList
+        shoppingList.add(nb2);
+        shoppingList.add(food);
+        //實作2.利用for迴圈，計算shoppingList中的總金額,並印在Console中
+        int sum = 0;
+        for (Product product : shoppingList) {
+        	System.out.println("買入"+product.getName()+"價錢"+product.getPrice());
+        	sum += product.getPrice();
+        }
+    		System.out.println("總金額="+sum);
+    	System.out.println("======================買入NB屬性=============================");
+        //實作3.利用for迴圈，計算shoppingList中是Notebook型態的總金額,並印在Console中
+    	int sum2 = 0;
+        for (Product product : shoppingList) {        	
+        	if (product instanceof Notebook) {  //檢查item指向的物件 是否具備Food的型態 False 會跳掉
+        	System.out.println("買入"+product.getName()+"價錢"+product.getPrice());
+        	sum2 += product.getPrice();				
+        	}
+        }
+    		
+        System.out.println("總金額="+sum2);
+        		
+
+    }
+}
