@@ -1,0 +1,11 @@
+//這個為老師預設沒有更動，Notebook繼承Product，也透過super呼叫父類方法
+
+package exam.e5;
+
+public class Notebook extends Product {
+
+
+    public Notebook(String name, int price) {
+        super(name, price);
+    }
+}
