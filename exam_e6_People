@@ -1,0 +1,28 @@
+package exam.e6;
+
+public class People {
+    private String id;
+    private int age;
+
+ //People的建構方法可以拋入id及age
+    public People(String id, int age) {
+        this.id = id;
+        this.age = age;
+    }
+//因為id與age為private，所以要新增get/set提供呼叫
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
